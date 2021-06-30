@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Booklog</title>
+    <link rel="stylesheet" href="blog8.css" />
+</head>
+<body>
+    <header>
+        <h1 id="Titolo2">Booklog</h1>
+    </header>
+    <form>
+        <table>
+            <caption></caption>
+            <tbody>
+                <tr><th><label>Titolo del libro:</label></th><td><input type="text" required /></td></tr>
+                <tr><th><label>Autore del libro:</label></th><td><input type="text" required /></td></tr>
+                <tr><th><label>Codice ISBN:</label></th><td><input type="text" pattern="[0-9]{13}" minlenght="13" maxlength="13" title="Possono essere inseriti solo numeri" required="required"></td></tr>
+                <tr><th><label>Disponibile:</label></th><td><input type="radio" value="1" name="disponibilità" />Si <input type="radio" value="2" name="disponibilità" />No</td></tr>
+            </tbody>
+        </table>
+        <br />
+        <br />
+        <center>
+            <input type="submit" value="Conferma" id="tasto" />
+            <input type="reset" value="Annulla" id="tasto" />
+        </center>
+    </form>
+    <nav>
+        <ul>
+            <li><a href="Blog8.html">Home</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
